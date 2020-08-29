@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Mark's Portfolio</title>
+    <link rel = 'stylesheet' href = 'homepage.css'>
+    <link rel = 'icon' href = 'work.png'>
+    <meta name= 'viewport' content = 'width=device-width, initial-scale=1.0'>
+<head>
+
+<body>
+<!--Framed Nav bar, indicating the current page with an underline, use box-shadow-->
+
+    <nav>
+        <div class = 'logo'>
+            <!-- image credit to 'https://www.creativefabrica.com/product/letter-m-icon-851/' -->
+            <a href = '#'><img alt = "Mark's logo" src = 'logo.png'></img></a>
+        </div>
+
+        <a class = 'toggle_button' href = '#'>
+            <span class = 'bar'></span>
+            <span class = 'bar'></span>
+            <span class = 'bar'></span>
+        </a>
+
+        <div class = 'navbar_links'>
+            <ul>
+                <li><a href ="#">Home</a></li>
+                <li><a href ="">Projects</a></li>
+                <li><a href ="">About me</a></li>
+                <li><a href ="">Blogs</a></li>
+                <li><a href ="">Contact me</a></li>
+            </ul>
+        </div>
+
+        <div class = ''>
+
+        </div>
+    </nav>
+
+<!-- main text area, introducing myself in a sentence -->
+    <main>
+        <h1>Hi,<br>I am Mark,<br>a potential full stack developer<br> who is earger to design and code!</h1>
+        <button>View Projects</button>
+    </main>
+
+
+</body>
+
+<style>
+    const navbarlinks = document.getElementsByClassName('navbarlinks')[0];
+    const togglebutton = document.getElementsByClassName('toggle_button')[0]
+
+    togglebutton.addEventListener("click", () => {
+    navbarlinks.classList.toggle('active')
+})
+
+</style>
+
+<footer>
+     
+</footer>
+
+
