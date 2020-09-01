@@ -5,41 +5,24 @@
     font-family: 'Baloo Tamma 2', cursive;
     box-sizing: border-box;
 }
-/* Question 1: when the navbar is hidden, how can I make the space the same background color to the main section? */
+
 nav {
-    height: 10vh;
     background-color: #011627;
-    /* padding: 0.75rem; */
+    padding: 0.75rem;
     display: flex;
     align-items: center;
-    opacity: 0;
-}
-
-nav:hover {
-    opacity: 100%;
-    transition: 0.2s;
-}
-
-.logo {
-    height: 100%;
-}
-
-.logo a {
-    height: 100%;
-    display: inline-block;
 }
 
 .logo img {
-    display: block;
-    height: 100%;
-    /* height: 5rem;
+    height: 5rem;
     width: 5rem;
     position: relative;
-    top: 5px; */
+    top: 5px;
 }
 
 .navbar_links {
     width: 100%;
+    
 }
 
 .navbar_links ul {
@@ -66,13 +49,12 @@ nav:hover {
 
 .toggle_button {
     position: absolute;
-    align-self: flex-end;
     width: 30px;
     height: 30px;
+    right: 30px;
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    z-index: 3;
 }
 
 .toggle_button .bar {
@@ -82,27 +64,29 @@ nav:hover {
     border-radius: 40px;
 }
 
+/* Work paused here */
 .mainbox {
     height: 100%;
     width: 100vmax;
+    background: url();
 }
 
-@media only screen and (max-width: 980px) {
+
+@media only screen and (max-width: 830px) {
     .toggle_button {
-        margin-right: 10px;
         display: flex;
+        right: 30px;
+        top: 38px;
     }
 
     nav {
         flex-direction: column;
         align-items: flex-start;
-        justify-content: center;
     }
 
     .navbar_links{
         display: none;
     }
-
     .navbar_links ul {
         width: 100%;
         flex-direction: column;
@@ -118,17 +102,12 @@ nav:hover {
     }
 
     .navbar_links ul a:hover {
-        border: #2EC4B6 solid 2px;
-        border-radius: 10px;
-        transition: 0.2s;
+    border: #2EC4B6 solid 2px;
+    border-radius: 10px;
+    transition: 0.2s;
     }
 
     .navbar_links.active {
         display: flex;
-        background: #011627;
-        z-index: 2;
-        position: relative;
-        top: 80px;
-        padding: 10px;
     }
 }

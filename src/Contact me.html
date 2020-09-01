@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+
 <head>
     <title>Mark's Portfolio</title>
     <link rel = 'stylesheet' href = 'homepage.css'>
-    <link rel = 'stylesheet' href = 'home.css'>
     <link rel = 'icon' href = 'work.png'>
     <meta name= 'viewport' content = 'width=device-width, initial-scale=1.0'>
 <head>
+
 <body>
 <!--Framed Nav bar, indicating the current page with an underline, use box-shadow-->
+
     <nav>
         <div class = 'logo'>
-<!-- image credit to 'https://www.creativefabrica.com/product/letter-m-icon-851/' -->
+            <!-- image credit to 'https://www.creativefabrica.com/product/letter-m-icon-851/' -->
             <a href = '#'><img alt = "Mark's logo" src = 'logo.png'></img></a>
         </div>
 
@@ -29,22 +31,35 @@
                 <li><a href ="Contact me.html">Contact me</a></li>
             </ul>
         </div>
+
+        <div class = ''>
+
+        </div>
     </nav>
 
-<!-- main text area, introduce the page in one sentence-->
     <main>
-        <div class = 'mainbox'> 
-            <h1>Hi, I am Mark,<br> A potential <span>full-stack developer</span><br> who is eager to design and code!</h1><br>
-            <a class = 'View Projects' href="projects.html">View Projects</a>   
-        </div>
+        <h1>Contact me</h1>
+        <form action="https://formspree.io/xdowrlpn" method="POST">
+            <label>
+                Name:
+                <input type="text" name="name">
+            </label>
+            <label>
+                Email:
+                <input type="text" name="email">
+            </label>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+        <button type="submit">Send</button>
+        </form>
     </main>
-    <script>
-        const navbarLinks = document.getElementsByClassName('navbar_links')[0];
-        const toggleButton = document.getElementsByClassName('toggle_button')[0]
 
-        toggleButton.addEventListener("click", () => {
-            navbarLinks.classList.toggle('active')
-        })
-    </script>
-</body>
-
+<footer>
+    <hr>
+    <p>Mark Huang</p>
+    <p>Email: amwhow@gmail.com</p>
+    <p>LinkedIn(icon)</p>
+    <p>Github(icon)</p>
+</footer>
