@@ -5,11 +5,10 @@
     font-family: 'Baloo Tamma 2', cursive;
     box-sizing: border-box;
 }
-/* Question 1: when the navbar is hidden, how can I make the space the same background color to the main section? */
+
 nav {
-    height: 10vh;
+    height: 15vh;
     background-color: #011627;
-    /* padding: 0.75rem; */
     display: flex;
     align-items: center;
     opacity: 0;
@@ -82,10 +81,7 @@ nav:hover {
     border-radius: 40px;
 }
 
-.mainbox {
-    height: 100%;
-    width: 100vmax;
-}
+
 
 @media only screen and (max-width: 980px) {
     .toggle_button {
@@ -109,11 +105,11 @@ nav:hover {
         align-items: center;
     }
 
-    .navbar_links ul li{
+    .navbar_links ul li {
         margin: 0.5em;
     }
 
-     .navbar_links ul a{
+    .navbar_links ul a {
         padding: 0.25em;
     }
 

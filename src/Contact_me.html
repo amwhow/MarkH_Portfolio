@@ -2,7 +2,8 @@
 
 <head>
     <title>Mark's Portfolio</title>
-    <link rel = 'stylesheet' href = 'homepage.css'>
+    <link rel = 'stylesheet' href = 'nav.css'>
+    <link rel = 'stylesheet' href = 'Contact_me.css'>
     <link rel = 'icon' href = 'work.png'>
     <meta name= 'viewport' content = 'width=device-width, initial-scale=1.0'>
 <head>
@@ -12,8 +13,8 @@
 
     <nav>
         <div class = 'logo'>
-            <!-- image credit to 'https://www.creativefabrica.com/product/letter-m-icon-851/' -->
-            <a href = '#'><img alt = "Mark's logo" src = 'logo.png'></img></a>
+<!-- image credit to 'https://www.creativefabrica.com/product/letter-m-icon-851/' -->
+            <a href = 'home.html'><img alt = "Mark's logo" src = 'logo.png'></img></a>
         </div>
 
         <a class = 'toggle_button' href = '#'>
@@ -31,14 +32,14 @@
                 <li><a href ="Contact me.html">Contact me</a></li>
             </ul>
         </div>
-
-        <div class = ''>
-
-        </div>
     </nav>
 
     <main>
         <h1>Contact me</h1>
+        <div class = 'cv'>
+                <img src = 'image.png' alt = 'resume image'>
+                <a href = '#'>Download CV here</a>
+            </div>
         <form action="https://formspree.io/xdowrlpn" method="POST">
             <label>
                 Name:
@@ -51,15 +52,15 @@
             <label>
                 Your message:
                 <textarea name="message"></textarea>
-            </label>
-        <button type="submit">Send</button>
+            </label><br>
+        <button type="submit" value="submit">Send</button>
         </form>
     </main>
 
 <footer>
     <hr>
-    <p>Mark Huang</p>
-    <p>Email: amwhow@gmail.com</p>
-    <p>LinkedIn(icon)</p>
-    <p>Github(icon)</p>
+    <span>Mark Huang</span>
+    <span>Email: amwhow@gmail.com</span>
+    <span>LinkedIn(icon)</span>
+    <span>Github(icon)</span>
 </footer>
