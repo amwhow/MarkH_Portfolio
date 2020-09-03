@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(-45deg,  #011627, #2ec4b6);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    height: 85vh;
+    color: #FDFFFC;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+.mainbox h1 {
+    text-align: center;
+}
+
+.post_overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85vw;
+}
+
+.post_overview p {
+    
+}
+
+.post-unfolded {
+    display: none;
+}
+
+.blog_post {
+    margin: 0 auto;
+    width: 55vw;
+    padding: 1.5em;
+}

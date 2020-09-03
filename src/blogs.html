@@ -3,6 +3,7 @@
 <head>
     <title>Mark's Portfolio</title>
     <link rel = 'stylesheet' href = 'nav.css'>
+    <link rel = 'stylesheet' href = 'blogs.css'>
     <link rel = 'icon' href = 'work.png'>
     <meta name= 'viewport' content = 'width=device-width, initial-scale=1.0'>
 <head>
@@ -38,9 +39,8 @@
         <div class = 'mainbox'> 
             <h1>Blogs</h1>
                 <div class = 'post_overview'>
-                    <img class = 'blog_post' src = '#' alt = 'image for post1'></img>
-                    <span class = 'post_title'></span>
-                    <span class = 'post_time'></span>
+                    <p class = 'post_title'>1. A roadmap to be a full-stack developer. (Posted by: 25 Sep 2017)</p>
+                    <img class = 'blog_post' src = 'post1.png' alt = 'image for post1'></img>
                 </div>
                 <div class = 'post-unfolded'>
                     <p>Post description: lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum </p>
@@ -48,9 +48,8 @@
                 </div>
 
                  <div class = 'post_overview'>
+                    <p class = 'post_title'>2. Top 10 destinations in Melbourne. (Posted by: 25 Sep 2017)</p>
                     <img class = 'blog_post' src = '#' alt = 'image for post2'></img>
-                    <span class = 'post_title'></span>
-                    <span class = 'post_time'></span>
                 </div>
                 <div class = 'post-unfolded'>
                     <p>Post description: lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum </p>
@@ -58,9 +57,8 @@
                 </div>
 
                  <div class = 'post_overview'>
+                    <p class = 'post_title'>3. Things you need to know to become a pro tennis player.(Posted by: 25 Sep 2017)</p>
                     <img class = 'blog_post' src = '#' alt = 'image for post3'></img>
-                    <span class = 'post_title'></span>
-                    <span class = 'post_time'></span>
                 </div>
                 <div class = 'post-unfolded'>
                     <p>Post description: lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum </p>
@@ -68,9 +66,9 @@
                 </div>
 
                  <div class = 'post_overview'>
+                    <p class = 'post_title'>4. This is how I earned my first home one year after graduate. (Posted by: 25 Sep 2017)</p>
                     <img class = 'blog_post' src = '#' alt = 'image for post4'></img>
-                    <span class = 'post_title'></span>
-                    <span class = 'post_time'></span>
+                    
                 </div>
                 <div class = 'post-unfolded'>
                     <p>Post description: lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum </p>
@@ -78,9 +76,8 @@
                 </div>
 
                  <div class = 'post_overview'>
+                    <p class = 'post_title'>5. Japanese Spitz gallery. (Posted by: 25 Sep 2017)</p>
                     <img class = 'blog_post' src = '#' alt = 'image for post5'></img>
-                    <span class = 'post_title'></span>
-                    <span class = 'post_time'></span>
                 </div>
                 <div class = 'post-unfolded'>
                     <p>Post description: lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum lorim ipsum </p>
@@ -88,3 +85,13 @@
                 </div>
         </div>
     </main>
+
+
+<script>
+    const navbarLinks = document.getElementsByClassName('navbar_links')[0];
+    const toggleButton = document.getElementsByClassName('toggle_button')[0];
+
+    toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
