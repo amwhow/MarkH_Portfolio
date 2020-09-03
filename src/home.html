@@ -4,6 +4,7 @@
     <link rel = 'stylesheet' href = 'nav.css'>
     <link rel = 'stylesheet' href = 'home.css'>
     <link rel = 'icon' href = 'work.png'>
+    <link rel = 'script' href = 'dropdown.js'>
     <meta name= 'viewport' content = 'width=device-width, initial-scale=1.0'>
 <head>
 <body>
@@ -38,13 +39,15 @@
             <a class = 'View Projects' href="projects.html">View Projects</a>   
         </div>
     </main>
-    <script>
-        const navbarLinks = document.getElementsByClassName('navbar_links')[0];
-        const toggleButton = document.getElementsByClassName('toggle_button')[0]
-
-        toggleButton.addEventListener("click", () => {
-            navbarLinks.classList.toggle('active')
-        })
-    </script>
+    
 </body>
 
+<!-- Navbar dropdown button feature -->
+<script>
+    const navbarLinks = document.getElementsByClassName('navbar_links')[0];
+    const toggleButton = document.getElementsByClassName('toggle_button')[0];
+
+    toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>

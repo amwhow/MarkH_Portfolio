@@ -7,12 +7,12 @@
 
 body {
     background-image: linear-gradient(-45deg,  #011627, #2ec4b6);
-    height: calc(80vh + 20vh);
+    height: calc(85vh + 15vh);
 }
 
 main {
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     position: absolute;
     display: flex;
     justify-content: center;
