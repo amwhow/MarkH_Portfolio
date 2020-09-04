@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(-45deg,  #011627, #2ec4b6);
+    height: calc(85vh + 15vh);
+}
+
+main {
+    width: 100%;
+    /* height: 85vh; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FDFFFC;
+}
+
+.projects_box {
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    place-items: center;
+}
+
+.snapshot {
+    width: 25vw;
+    border: #FDFFFC 5px solid;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .project_outline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+        width: 60vw;
+        position: relative;  
+    }
+
+    .project1 {
+        background-image: url(LP.png);
+        background-repeat: no-repeat;
+        background-size: 60vw 68vh;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .button {
+        text-decoration: none;
+        color: #FDFFFC;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .project2 {
+        background-image: url(LP.png);
+        background-repeat: no-repeat;
+        background-size: 60vw 68vh;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .project3 {
+        background-image: url(LP.png);
+        background-repeat: no-repeat;
+        background-size: 60vw 68vh;
+        text-align: center;
+    }
+}
+

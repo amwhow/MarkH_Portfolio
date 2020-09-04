@@ -3,6 +3,7 @@
 <head>
     <title>Mark's Portfolio</title>
     <link rel = 'stylesheet' href = 'nav.css'>
+    <link rel = 'stylesheet' href = 'projects.css'>
     <link rel = 'icon' href = 'work.png'>
     <meta name= 'viewport' content = 'width=device-width, initial-scale=1.0'>
 <head>
@@ -37,28 +38,33 @@
     <main>
         <h1>My Projects</h1>
         <div class = 'projects_box'> 
-            <div class = 'project_outline'>
-                <img class = 'snapshot' src = '#' alt = 'project 1 - linkin park site'>
+            <div class = 'project_outline project1'>
+                <h2>1. Linkin Park fan page</h2>
                 <p>Language used: HTML, CSS</p>
-                <p>Linkin Park Fan page</p>
-                <button class = >Go to site</button>
+                <a class = 'button' href = '' target = '_blank' >Go to site</a>
             </div>
-            <div class = 'project_outline'>
-                <img class = 'snapshot' src = '#' alt = 'project 2 - my Portfolio'>
+        </div>
+            <div class = 'project_outline project2'>
+                <h2>2. Mark Huang Portfolio</h2>
+                
                 <p>Language used: HTML, CSS, JAVASCRIPT</p>
-                <p>Mark's Portfolio</p>
-                <button class = >Go to site</button>
+                <a class = 'button' href = '' target = '_blank' >Go to site</a>
             </div>
-            <div class = 'project_outline'>
-                <img class = 'snapshot' src = '#' alt = 'project 3 - a mockup'>
+            <div class = 'project_outline project3'>
+                <h2>3. To be developed</h2>
+               
                 <p>Language used: HTML, CSS</p>
-                <p>Linkin Park Fan page</p>
-                <button class = >Go to site</button>
             </div>
-            
-            
         </div>
     </main>
-
-
 </body>
+
+<!-- Navbar dropdown button feature -->
+<script>
+    const navbarLinks = document.getElementsByClassName('navbar_links')[0];
+    const toggleButton = document.getElementsByClassName('toggle_button')[0];
+
+    toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle('active')
+    })
+</script>
