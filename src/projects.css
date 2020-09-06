@@ -122,6 +122,13 @@ main {
         height: 250vh;
     }
 
+    .projects_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 220vh;;
+    }
+
     .project_outline {
         display: flex;
         flex-direction: column;
