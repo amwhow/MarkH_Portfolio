@@ -44,16 +44,20 @@ main {
     position: relative;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .project1 {
-    background-image: url(LP.png);
+    background-image: url(../img/furniture.jpg);
 }
 
 .project2 {
-    background-image: url(Markimage.JPG); 
+    background-image: url(../img/rainbow-cocktail.jpg); 
 }
 
 .project3 {
-    background-image: url(idea.jpg);
+    background-image: url(../img/idea.jpg);
 }
 
  .button {
